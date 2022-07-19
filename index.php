@@ -43,46 +43,48 @@
         </div>
     </section>
 
-
-    
     <section class="img-text">
         <div class="container">
-            <div class="img-holder">
-                <img src="" alt="">
-            </div>
-            <div class="text-holder">
-                <div class="heading">
-                    <h2>
-                        It's time for your check-up
-                        <img src="images/" alt="">
-                    </h2>
-                    <h4>with Check Point!</h4>
+            <div class="img-text-wrap">
+                <div class="img-holder">
+                    <img src="images/img-1.png" alt="">
                 </div>
-                <div class="description">
-                    <p>We'll work with your specific requirements to deliver a holistic, easy-to-manage solution that lowers your total cost of ownership by reducing your security operations, while granting you unrivalled safety with the best technology and proactive support.</p>
-                </div>
-                <div class="note">
-                    <p>Chat with our team to renew, upgrade or deploy your Quantum Network Security solution today.</p>
+                <div class="text-holder">
+                    <div class="heading">
+                        <h2>
+                            It's time for your check-up
+                            <img src="images/" alt="">
+                        </h2>
+                        <h4>with Check Point!</h4>
+                    </div>
+                    <div class="description">
+                        <p>We'll work with your specific requirements to deliver a holistic, easy-to-manage solution that lowers your total cost of ownership by reducing your security operations, while granting you unrivalled safety with the best technology and proactive support.</p>
+                    </div>
+                    <div class="note">
+                        <p>Chat with our team to renew, upgrade or deploy your Quantum Network Security solution today.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="img-text">
+    <section class="img-text pattern">
         <div class="container">
-            <div class="img-holder">
-                <img src="" alt="">
-            </div>
-            <div class="text-holder">
-                <div class="heading">
-                    <h2>5 reasons to upgrade your cyber security</h2>
-                    <h4>with Check Point!</h4>
+            <div class="img-text-wrap">
+                <div class="img-holder">
+                    <img src="images/img-resource.png" alt="">
                 </div>
-                <div class="description">
-                    <p>We’ll work with your specific requirements to deliver a holistic, easy-to-manage solution that lowers your total cost of ownership by reducing your security operations, while granting you unrivalled safety with the best technology and proactive support.</p>
-                </div>
-                <div class="note">
-                    <p>Chat with our team to renew, upgrade or deploy your Quantum Network Security solution today.</p>
+                <div class="text-holder">
+                    <div class="heading">
+                        <h2>5 reasons to upgrade your cyber security</h2>
+                        <h4>with Check Point!</h4>
+                    </div>
+                    <div class="description">
+                        <p>We’ll work with your specific requirements to deliver a holistic, easy-to-manage solution that lowers your total cost of ownership by reducing your security operations, while granting you unrivalled safety with the best technology and proactive support.</p>
+                    </div>
+                    <div class="note">
+                        <p>Chat with our team to renew, upgrade or deploy your Quantum Network Security solution today.</p>
+                    </div>
                 </div>
             </div>
         </div>

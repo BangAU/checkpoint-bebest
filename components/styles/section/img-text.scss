@@ -1,0 +1,44 @@
+.img-text{
+    padding: 80px 0;
+    position: relative;
+    &.pattern{
+        background: rgb(217,21,114);
+background: linear-gradient(155deg, rgba(217,21,114,1) 0%, rgba(221,46,129,1) 20%, rgba(0,0,0,1) 100%);
+        &:before{
+            position: absolute;
+            content: '';
+            width: 50%;
+            height: 100%;
+            background: url(/images/img-pattern.png);
+            background-size: 140%;
+            background-position: 100% 50%;
+            left: 0;
+            top: 0;
+        }
+    }
+    &-wrap{
+        display: flex;
+        position: relative;
+        z-index: 5;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .img-holder{
+        display: flex;
+        width: 45%;
+        img{
+            width: calc(100% + 80px);
+            height: auto;
+            position: relative;
+            left: -80px;
+        }
+    }
+    .text-holder{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        .heading{
+            padding-bottom: 30px;
+        }
+    }
+}
