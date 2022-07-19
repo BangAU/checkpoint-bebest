@@ -1,0 +1,57 @@
+// All the Typography settings here
+html {
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    @include font-work-sans-regular;
+    @include font-size(1.9rem);
+    line-height: 1.21em;
+    color: $white;
+}
+
+p {
+    margin: 0 0 20px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    @include font-size(6rem);
+    line-height: 1.2em;
+    margin: 0 0 20px;
+}
+
+h2 {
+    @include font-size(5rem);
+    line-height: 1.2em;
+    margin: 0 0 10px;
+}
+
+h3 {
+    @include font-pilate-regular;
+    @include font-size(4rem);
+    line-height: 1.2em;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+}
+
+h4 {
+    @include font-pilate-regular;
+    @include font-size(3rem);
+    line-height: 1.2em;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+}
+h5{
+    @include font-pilate-regular;
+    @include font-size(2.6rem);
+    line-height: 1.2em;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+}

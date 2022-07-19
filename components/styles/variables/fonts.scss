@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+@font-face {
+    font-family: 'Pilat Wide Black';
+    src:
+        url('./webfonts/PilatWide-Black.woff2') format('woff2'),
+        url('./webfonts/PilatWide-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pilat Regular';
+    src:
+        url('./webfonts/Pilat-Regular.woff2') format('woff2'),
+        url('./webfonts/Pilat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin font-pilate-wide-black {
+    font-family: 'Pilat Wide Black', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+@mixin font-pilate-regular {
+    font-family: 'Pilat Regular', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin font-work-sans-regular {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}

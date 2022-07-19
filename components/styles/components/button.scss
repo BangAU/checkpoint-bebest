@@ -1,0 +1,16 @@
+.btn {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    @include font-work-sans-regular;
+    @include font-size(1.9rem);
+    color: $white;
+    padding: 20px 40px;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .3s ease-out;
+    min-width: 300px;
+    background: $red;
+}
