@@ -32,13 +32,9 @@ function smooth_scroll() {
         event.preventDefault();
         var $anchor = $(this);
 
-        $("html, body")
-            .stop()
-            .animate({
-                    scrollTop: $($anchor.attr("href")).offset().top,
-                },
-                1000
-            );
+        $("html, body").animate({
+            scrollTop: $($anchor.attr("href")).offset().top,
+        },800);
 
     });
 }
@@ -58,13 +54,7 @@ function rellax(){
 }
 
 function form_validate(){
-    $('.custom-form-step').validate({
-        rules: {
-            email: {
-                required: true,
-                email: true
-            }
-        },
+    $('.contact-form').validate({
         errorPlacement: function errorPlacement(error, element) {
                 element.after(error);
         },

@@ -21,7 +21,7 @@
                             <img src="images/banner-lockup.png" alt="" class="banner-lockup">
                             <img src="images/banner-lockup-shade.png" alt="" class="banner-lockup-shade">
                         </h1>
-                        <a href="" class="btn" data-aos="fade-in" data-aos-easing="ease" data-aos-delay="2000" data-aos-duration="800">Start your Engines</a>
+                        <a href="#contact" class="btn page-scroll" data-aos="fade-in" data-aos-easing="ease" data-aos-delay="2000" data-aos-duration="800">Start your Engines</a>
                     </div>
                 </div>
             </div>
@@ -43,10 +43,10 @@
     <section class="img-text" id="check-up">
         <div class="container">
             <div class="img-text-wrap">
-                <div class="img-holder" data-aos="fade-right" data-aos-easing="ease" data-aos-delay="500" data-aos-duration="800">
+                <div class="img-holder" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="800">
                     <img src="images/img-1.png" alt="">
                 </div>
-                <div class="text-holder" data-aos="fade-in" data-aos-easing="ease" data-aos-delay="500" data-aos-duration="800">
+                <div class="text-holder" data-aos="fade-in" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="800">
                     <div class="text-holder-wrap">
                         <div class="heading">
                             <h2>
@@ -70,10 +70,10 @@
     <section class="img-text pattern" id="upgrade">
         <div class="container">
             <div class="img-text-wrap">
-                <div class="img-holder" data-aos="fade-right" data-aos-easing="ease" data-aos-delay="500" data-aos-duration="800">
+                <div class="img-holder" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="800">
                     <img src="images/img-resource.png" alt="">
                 </div>
-                <div class="text-holder" data-aos="fade-in" data-aos-easing="ease" data-aos-delay="500" data-aos-duration="800">
+                <div class="text-holder" data-aos="fade-in" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="800">
                     <div class="text-holder-wrap">
                         <div class="heading">
                             <h2>
@@ -110,8 +110,11 @@
                             <p>Are you due for a tune-up? Check Point’s team of fast-mobilising experts are ready to support you with a cost-effective renewal and upgrade of your cyber security solution. We know every business has different IT needs to make for a smooth ride and we’ll work closely with you to find your ideal gear and maintenance plan.</p>
                         </div>
                         <div class="note">
-                        <p>Book a meeting to learn more about your renewal and upgrade options.</p>
-                        <p>Simply fill out the form and our team will be in touch.</p>
+                            <p>Book a meeting to learn more about your renewal and upgrade options.</p>
+                            <p>Simply fill out the form and our team will be in touch.</p>
+                        </div>
+                        <div class="btn-holder">
+                            <a href="#contact" class="btn page-scroll">Book a meeting</a>
                         </div>
                     </div>
                 </div>
@@ -142,7 +145,7 @@
                         <p>
 With Check Point in your side-car, you can safely handle the sharpest turns and keep your eyes on the prize.</p>
                         <div class="btn-holder">
-                            <a href="" class="btn">Start Now</a>
+                            <a href="#contact" class="btn page-scroll">Start Now</a>
                         </div>
                     </div>
                 </div>
@@ -157,7 +160,7 @@ With Check Point in your side-car, you can safely handle the sharpest turns and 
                 <div class="three-cols">
                     <div class="col"data-aos="fade-right" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="800">
                         <h2>Ready…</h2>
-                        <p>Be prepared for anything with Check Point's uncompromising security and agility. Our ground-breaking AI technology blocks emerging zero-day threats and acquires protections from the latest attacks. We won't just detect a risk - we'll prevent it. </p>
+                        <p>Be prepared for anything with Check Point's uncompromising security and agility. Our ground-breaking AI technology blocks emerging zero-day threats and provides protections from the latest attacks. We won't just detect a risk - we'll prevent it. </p>
                         <p>And with at least 80% of network traffic requiring decryption, as well as a 25% increase of network traffic year-over-year, the capacity and speed of our technology is crucial to keeping your business competitive whilst remaining secure. Our scalable solution minimises costs while increasing performance, encouraging the advancement of your operations. </p>
                     </div>
                     <div class="col"data-aos="fade-right" data-aos-easing="linear" data-aos-delay="750" data-aos-duration="800">
@@ -183,9 +186,10 @@ With Check Point in your side-car, you can safely handle the sharpest turns and 
                     <img src="images/heading-contact.png" alt="">
                 </h2>
                 <h3 data-aos="fade-in" data-aos-easing="linear" data-aos-delay="800" data-aos-duration="800">Purchase or Upgrade with Check point today</h3>
+                <p data-aos="fade-in" data-aos-easing="linear" data-aos-delay="1000" data-aos-duration="800">or contact a Check Point account manager to book a consultation' under purchase.</p>
             </div>
             <div class="form-wrap" data-aos="fade-in" data-aos-easing="linear" data-aos-delay="1000" data-aos-duration="800">
-                <form action="contact.php" method="post" id="contact-form" class="getstarted-form">
+                <form action="contact.php" method="post" id="contact-form" class="contact-form">
                     <fieldset>
                         <div class="form-group">
                             <input type="text" name="firstname" placeholder="First Name" class="required">

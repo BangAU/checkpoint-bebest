@@ -39,3 +39,9 @@ input[type="tel"] {
         outline: none;
     }
 }
+label.error {
+    color: red;
+    font-size: 1.6rem;
+    padding: 10px 0 0;
+    display: block;
+}
