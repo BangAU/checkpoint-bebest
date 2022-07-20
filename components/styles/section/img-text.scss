@@ -50,6 +50,13 @@
         }
         .heading{
             padding-bottom: 30px;
+            h2{
+                font-size: 0;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
         }
         .note{
             @include font-size(1.7rem);

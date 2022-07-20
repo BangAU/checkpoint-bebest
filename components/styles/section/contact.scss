@@ -12,14 +12,25 @@
         object-fit: cover;
         mix-blend-mode: hard-light;
     }
+    .form-heading{
+        text-align: center;
+        padding-bottom: 40px;
+        position: relative;
+        z-index: 5;
+        h2{
+            font-size: 0;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        h3{
+            max-width: 700px;
+            margin: 0 auto;
+        }
+    }
     .form-wrap{
         position: relative;
         z-index: 5;
-        max-width: 700px;
-        margin: 0 auto;
-        .form-heading{
-            text-align: center;
-            padding-bottom: 40px;
-        }
     }
 }
