@@ -12,18 +12,20 @@ body {
     overflow-x: hidden;
 }
 
+.sitecontent{
+    overflow: hidden;
+}
 .container {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 8vw;
 
     @include respond-to(tablet){
-        padding: 0 20px;
+        padding: 0 2vw;
     }
 }
-
-.section {
-    position: relative;
-    padding: 60px 0;
+.inner-container{
+    max-width: 1000px;
+    margin: 0 auto;
 }

@@ -13,7 +13,7 @@ body {
 }
 
 p {
-    margin: 0 0 20px;
+    margin: 0 0 30px;
 }
 
 a {
@@ -22,15 +22,17 @@ a {
 }
 
 h1 {
-    @include font-size(6rem);
+    @include font-size(10rem);
     line-height: 1.2em;
     margin: 0 0 20px;
 }
 
 h2 {
-    @include font-size(5rem);
+    @include font-pilate-wide-black;
+    @include font-size(9rem);
     line-height: 1.2em;
     margin: 0 0 10px;
+    text-transform: uppercase;
 }
 
 h3 {

@@ -1,8 +1,7 @@
 .btn {
     position: relative;
     display: inline-block;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     @include font-work-sans-regular;
     @include font-size(1.9rem);
     color: $white;
@@ -13,4 +12,10 @@
     transition: all .3s ease-out;
     min-width: 300px;
     background: $red;
+    -webkit-box-shadow: 0 0 20px -5px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0 0 20px -5px rgba(255, 255, 255, 1);
+    box-shadow: 0 0 20px -5px rgba(255, 255, 255, 1);
+}
+.btn-holder{
+    padding-top: 30px;
 }

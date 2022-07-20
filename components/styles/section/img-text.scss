@@ -1,19 +1,19 @@
 .img-text{
-    padding: 80px 0;
+    padding: 8vw 0;
     position: relative;
     &.pattern{
-        background: rgb(217,21,114);
-background: linear-gradient(155deg, rgba(217,21,114,1) 0%, rgba(221,46,129,1) 20%, rgba(0,0,0,1) 100%);
+        background: linear-gradient(155deg, rgba(217, 21, 114, 1) 0%, rgba(221, 46, 129, 1) 20%, rgba(0, 0, 0, 1) 100%);
         &:before{
             position: absolute;
             content: '';
             width: 50%;
             height: 100%;
             background: url(/images/img-pattern.png);
-            background-size: 140%;
+            background-size: 1400px;
             background-position: 100% 50%;
             left: 0;
             top: 0;
+            opacity: .25;
         }
     }
     &-wrap{
@@ -27,18 +27,33 @@ background: linear-gradient(155deg, rgba(217,21,114,1) 0%, rgba(221,46,129,1) 20
         display: flex;
         width: 45%;
         img{
-            width: calc(100% + 80px);
+            width: 120%;
             height: auto;
             position: relative;
-            left: -80px;
+            left: -10vw;
+        }
+        &.img-right{
+            img{
+                width: 112%;
+                left: auto;
+            }
         }
     }
     .text-holder{
         display: flex;
         flex-direction: column;
         width: 45%;
+        &.narrow{
+            .text-holder-wrap{
+                max-width: 480px;
+            }
+        }
         .heading{
             padding-bottom: 30px;
+        }
+        .note{
+            @include font-size(1.7rem);
+            text-transform: uppercase;
         }
     }
 }

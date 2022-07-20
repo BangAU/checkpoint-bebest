@@ -1,0 +1,26 @@
+.security{
+    padding: 10vw 0;
+    position: relative;
+    .heading{
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .two-cols{
+        display: flex;
+        justify-content: space-between;
+        .col{
+            width: 46%;
+        }
+    }
+    .bg-img{
+        position: absolute;
+        content: '';
+        left: 50%;
+        top: -10%;
+        width: 100%;
+        max-width: 1440px;
+        height: auto;
+        opacity: .2;
+        transform: translateX(-50%);
+    }
+}

@@ -1,5 +1,6 @@
-.section-introbanner {
+.introbanner {
     padding: 0;
+    position: relative;
     .banner-bg{
         position: absolute;
         content: '';
@@ -21,7 +22,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        padding: 50px 0;
+        padding: 50px;
     }
     .intro-text{
         &-wrap{

@@ -1,0 +1,33 @@
+.ready{
+    padding: 6vw 0;
+    position: relative;
+    z-index: 5;
+    .container{
+        position: relative;
+        .bg-img{
+            position: absolute;
+            content: '';
+            width: 35%;
+            right: 5%;
+            top: 0;
+        }
+    }
+    .three-cols{
+        display: flex;
+        flex-direction: column;
+        .col{
+            display: flex;
+            flex-direction: column;
+            width: 55%;
+            &:first-child{
+                margin-right: auto;
+            }
+            &:nth-child(2){
+                margin: 0 auto;
+            }
+            &:nth-child(3){
+                margin-left: auto;
+            }
+        }
+    }
+}

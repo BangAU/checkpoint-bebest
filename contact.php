@@ -2,13 +2,11 @@
 
 require("config.php");
 //check for isset and post data here and create a selection array
-$enquiry = (isset($_POST['enquiry']) && ($_POST['enquiry'] != "NULL")) ? $_POST['enquiry'] : "";
 $firstname = (isset($_POST['firstname']) && ($_POST['firstname'] != "NULL")) ? $_POST['firstname'] : "";
 $lastname = (isset($_POST['lastname']) && ($_POST['lastname'] != "NULL")) ? $_POST['lastname'] : "";
-$jobtitle = (isset($_POST['jobtitle']) && ($_POST['jobtitle'] != "NULL")) ? $_POST['jobtitle'] : "";
 $email = (isset($_POST['email']) && ($_POST['email'] != "NULL")) ? $_POST['email'] : "";
+$businessname = (isset($_POST['businessname']) && ($_POST['businessname'] != "NULL")) ? $_POST['businessname'] : "";
 $phone = (isset($_POST['phone']) && ($_POST['phone'] != "NULL")) ? $_POST['phone'] : "";
-$company = (isset($_POST['company']) && ($_POST['company'] != "NULL")) ? $_POST['company'] : "";
 //insert date
 $insert_date = date("Y-m-d H:i:s");
 
@@ -52,27 +50,12 @@ if(isset($form_check) && $form_check == 1) {
         $subjectSender = "";
         $headers .= "X-Mailer: PHP". phpversion() ."\r\n"; 
 
-        if (mail($to, $subject, $all_data_html, $headers)) {
-         
-            if($enquiry === "demo"){
-                echo json_encode(array(
-                    'status' => 'success',
-                    'message'=> 'demo'
-                ));
-            }
-            else{
-                echo json_encode(array(
-                    'status' => 'success',
-                    'message'=> 'contact'
-                ));
-            }
-        }
+        mail($to, $subject, $all_data_html, $headers);
+
+        echo 1;
     }
     else{
-        echo json_encode(array(
-            'status' => 'failed',
-            'message'=> ''
-        ));
+        echo 0;
     }
 }
 else{
