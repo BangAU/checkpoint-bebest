@@ -1,6 +1,9 @@
 .img-text{
     padding: 8vw 0;
     position: relative;
+    @include respond-to(mobile-large){
+        padding: 60px 0;
+    }
     &.pattern{
         background: linear-gradient(155deg, rgba(217, 21, 114, 1) 0%, rgba(221, 46, 129, 1) 20%, rgba(0, 0, 0, 1) 100%);
         &:before{
@@ -22,20 +25,35 @@
         z-index: 5;
         align-items: center;
         justify-content: space-between;
+        @include respond-to(mobile-large){
+            flex-direction: column;
+        }
     }
     .img-holder{
         display: flex;
         width: 45%;
+        @include respond-to(mobile-large){
+            width: auto;
+            margin: 0 -30px 30px;
+            order: 1;
+        }
         img{
             width: 120%;
             height: auto;
             position: relative;
             left: -10vw;
+            @include respond-to(mobile-large){
+                width: 100%;
+                left: 0;
+            }
         }
         &.img-right{
             img{
                 width: 112%;
                 left: auto;
+                @include respond-to(mobile-large){
+                    width: 100%;
+                }
             }
         }
     }
@@ -43,6 +61,10 @@
         display: flex;
         flex-direction: column;
         width: 45%;
+        @include respond-to(mobile-large){
+            width: 100%;
+            order: 2;
+        }
         &.narrow{
             .text-holder-wrap{
                 max-width: 480px;
@@ -50,11 +72,17 @@
         }
         .heading{
             padding-bottom: 30px;
+            @include respond-to(mobile-large){
+                padding-bottom: 0;
+            }
             h2{
                 font-size: 0;
                 img{
                     width: 100%;
                     height: auto;
+                    @include respond-to(mobile-large){
+                        width: 65%;
+                    }
                 }
             }
         }

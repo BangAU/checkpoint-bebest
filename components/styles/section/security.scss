@@ -9,14 +9,25 @@
             img{
                 width: 100%;
                 height: auto;
+                @include respond-to(mobile-large){
+                    position: relative;
+                    left: -10%;
+                    width: 120%;
+                }
             }
         }
     }
     .two-cols{
         display: flex;
         justify-content: space-between;
+        @include respond-to(mobile-large){
+            flex-direction: column;
+        }
         .col{
             width: 46%;
+            @include respond-to(mobile-large){
+                width: 100%;
+            }
         }
     }
     .bg-img{

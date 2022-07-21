@@ -15,10 +15,16 @@ body {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 8vw;
+    padding: 0 120px;
 
+    @include respond-to(large-desktop){
+        padding: 0 80px;
+    }
     @include respond-to(tablet){
-        padding: 0 2vw;
+        padding: 0 40px;
+    }
+    @include respond-to(mobile-large){
+        padding: 0 30px;
     }
 }
 .inner-container{

@@ -8,8 +8,10 @@
         <img src="images/banner-img.jpg" alt="" class="banner-bg">
         <div class="intro">
             <header class="logos">
-                <div class="logo-checkpoint">
-                    <img src="./images/check-point-logo.svg" width="170" alt="">
+                <div class="logos-container">
+                    <div class="logo-checkpoint">
+                        <img src="./images/check-point-logo.svg" width="170" alt="">
+                    </div>
                 </div>
             </header>
             <div class="intro-text">

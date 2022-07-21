@@ -22,7 +22,8 @@ win.on('resize', function(){
 function aos_init() {
     AOS.init({ 
         startEvent: 'load',
-        anchorPlacement: 'top-center'
+        anchorPlacement: 'top-center',
+        once: true,
     });
 }
 
