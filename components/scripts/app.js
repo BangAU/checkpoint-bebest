@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
     smooth_scroll();
     rellax();
     form_validate();
-    animStart();
 });
 
 //function called on window resize
@@ -43,9 +42,7 @@ function smooth_scroll() {
 // rellax init
 function rellax(){
     if($('.rellax').length) {
-        var rellax = new Rellax('.rellax', {
-            speed: -1.5
-        });
+        var rellax = new Rellax('.rellax');
         if ($(window).width() > 991) {
             rellax.refresh();
         } else {
@@ -59,23 +56,5 @@ function form_validate(){
         errorPlacement: function errorPlacement(error, element) {
                 element.after(error);
         },
-    })
-}
-
-
-function animStart() {
-    var objTarget = $('.footer .circ-orange-red svg'),
-        offsetFromTop = objTarget.offset().top;
-
-    $(window).scroll(function () {
-        var windowScroll = $(window).scrollTop(),
-            windowHeight = $(window).height();
-        // console.log('Offset Top', offsetFromTop);
-        // console.log('Window Height', $(window).height());
-        // console.log('Window Scroll', $(window).scrollTop());
-        if (offsetFromTop < (windowScroll + windowHeight)) {
-            // console.log('YEAH!!!!!!!!!!!!!!');
-            objTarget.addClass('anim-start')
-        }
     })
 }

@@ -13,33 +13,28 @@ $insert_date = date("Y-m-d H:i:s");
 $form_check = $_POST['form_check'];
 
 
-
 if(isset($form_check) && $form_check == 1) {
 
     // execute the query to write to database
-    $query = "INSERT INTO contact (enquiry, firstname,lastname, jobtitle, email, phone, company,insert_date) VALUES ('".$enquiry."','".$firstname."','".$lastname."','".$jobtitle."','".$email."', '".$phone."', '".$company."','".$insert_date."')";
-    //echo $query;die();
+    $query = "INSERT INTO contact (firstname,lastname, email, businessname, phone, insert_date) VALUES ('".$firstname."','".$lastname."','".$email."', '".$businessname."', '".$phone."','".$insert_date."')";
     $res= $conn->query($query);
-    //var_dump($last_id);die();
     if($res){
         
         //sending email here
         // format the data to be sent
         $all_data_html = '<strong>The following person has just submitted the form on:  https://www.checkpoint-smbsecurity.com/dickerdata</strong><br/><br/>'.
         '<table border=1>
-        <tr><td>Enquiry type</td><td>'.$enquiry.'</td></tr>
         <tr><td>First Name</td><td>'.$firstname.'</td></tr>
         <tr><td>Last Name</td><td>'.$lastname.'</td></tr>
-        <tr><td>Job Title</td><td>'.$jobtitle.'</td></tr>
-        <tr><td>Phone</td><td>'.$phone.'</td></tr>
-        <tr><td>Company</td><td>'.$company.'</td></tr>
         <tr><td>Email</td><td>'.$email.'</td></tr>
+        <tr><td>Company</td><td>'.$businessname.'</td></tr>
+        <tr><td>Phone</td><td>'.$phone.'</td></tr>
         <tr><td>Form Fill Date</td><td>'.$insert_date.'</td></tr>
         </table>';
 
-        $headers .= "Reply-To: No Reply <no-reply@checkpoint-smbsecurity.com>\r\n";
-        $headers .= "Return-Path: No Reply <no-reply@checkpoint-smbsecurity.com>\r\n";
-        $headers .= "From: No Reply <no-reply@checkpoint-smbsecurity.com>\r\n";
+        $headers = "Reply-To: No Reply <no-reply@checkpoint-bebest.com>\r\n";
+        $headers .= "Return-Path: No Reply <no-reply@checkpoint-bebest.com>\r\n";
+        $headers .= "From: No Reply <no-reply@checkpoint-bebest.com>\r\n";
         $headers .= "Organization: Qbit\r\n";
         $headers .= "MIME-Version: 1.0\r\n";
         $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
@@ -50,9 +45,12 @@ if(isset($form_check) && $form_check == 1) {
         $subjectSender = "";
         $headers .= "X-Mailer: PHP". phpversion() ."\r\n"; 
 
-        mail($to, $subject, $all_data_html, $headers);
-
-        echo 1;
+        if(mail($to, $subject, $all_data_html, $headers)){
+            echo "email sent";
+        }
+        else {
+            echo"email failed";
+        }
     }
     else{
         echo 0;

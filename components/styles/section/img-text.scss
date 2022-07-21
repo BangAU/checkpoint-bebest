@@ -18,6 +18,16 @@
             top: 0;
             opacity: .25;
         }
+        .img-holder{
+            img{
+                width: 150%;
+                left: -15vw;
+                @include respond-to(mobile-large){
+                    width: 100%;
+                    left: 0;
+                }
+            }
+        }
     }
     &-wrap{
         display: flex;

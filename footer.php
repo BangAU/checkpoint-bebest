@@ -9,7 +9,7 @@
 
 <script src="./js/vendor/jquery.min.js"></script>
 <script src="./js/vendor/aos.js"></script>
-<script src="./js/vendor/jquery.steps.min.js"></script>
+<script src="./js/vendor/rellax.min.js"></script>
 <script src="./js/vendor/jquery.validate.js"></script>
 <script src="./js/app.js"></script>
 

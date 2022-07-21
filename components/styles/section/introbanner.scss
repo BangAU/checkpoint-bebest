@@ -7,11 +7,12 @@
         content: '';
         left: 50%;
         top: -18%;
-        transform: translateX(-50%);
         width: 2200px;
+        margin-left: -1100px;
         height: auto;
         @include respond-to(normal){
             width: 1440px;
+            margin-left: -700px;
             top: -12%;
         }
     }

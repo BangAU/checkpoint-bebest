@@ -5,7 +5,7 @@
 <div class="sitecontent">
 
     <section class= "introbanner" id="banner">
-        <img src="images/banner-img.jpg" alt="" class="banner-bg">
+        <img src="images/banner-img.jpg" alt="" class="banner-bg rellax" data-rellax-speed="-5">
         <div class="intro">
             <header class="logos">
                 <div class="logos-container">
@@ -128,7 +128,7 @@
     </section>
 
     <section class="security" id="security">
-        <img class="bg-img" src="images/img-bike.png" />
+        <img class="bg-img" src="images/img-bike.png"/>
         <div class="container">
             <div class="heading">
                 <h2 data-aos="fade-in" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="800">
