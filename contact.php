@@ -46,14 +46,20 @@ if(isset($form_check) && $form_check == 1) {
         $headers .= "X-Mailer: PHP". phpversion() ."\r\n"; 
 
         if(mail($to, $subject, $all_data_html, $headers)){
-            echo "email sent";
+            echo json_encode(array(
+                'status' => 'success',
+            ));
         }
         else {
-            echo"email failed";
+            echo json_encode(array(
+                'status' => 'failed',
+            ));
         }
     }
     else{
-        echo 0;
+        echo json_encode(array(
+            'status' => 'failed',
+        ));
     }
 }
 else{

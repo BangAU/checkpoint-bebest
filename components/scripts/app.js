@@ -58,3 +58,40 @@ function form_validate(){
         },
     })
 }
+
+function form_submit() {
+    $(".contact-form .btn-submit").click(function(event){
+        event.preventDefault();
+        if( $(".contact-form").valid() ){
+            $( ".contact-form .btn-submit").attr("disabled", true);
+            var form_data = $(".contact-form").serialize();
+            var form_url = $(".contact-form").attr('action');
+            $('body').css('cursor','wait');
+            $.ajax({
+                type:"POST",
+                url: form_url,
+                data: form_data,
+                dataType:"json",
+                success: function(response){
+                    // console.log(response);
+                    $( ".contact-form .btn-submit").attr("disabled", false);
+                    $('body').css('cursor','auto');
+                    if(response.status === "success") {
+                        window.location.href="thankyou.php";
+                    }
+                    else{
+                        $('#form-msg').html('There might be some problem sending message. Please contact site admin');
+                        $('#form-msg').css('visibility',"visible");
+                    }
+
+                },
+                error: function(err) {
+                    console.log(err);
+                    $('#form-msg').html('There might be some problem sending message. Please contact site admin');
+                    $('#form-msg').css('visibility',"visible");
+                },
+            });
+        }
+    });
+
+}

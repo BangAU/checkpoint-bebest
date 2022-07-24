@@ -193,6 +193,7 @@ With Check Point in your side-car, you can safely handle the sharpest turns and 
             <div class="form-wrap" data-aos="fade-in" data-aos-easing="linear" data-aos-delay="1000" data-aos-duration="800">
                 <form action="contact.php" method="post" id="contact-form" class="contact-form">
                     <fieldset>
+                        <div id="form-msg"></div>
                         <div class="form-group">
                             <input type="text" name="firstname" placeholder="First Name" class="required">
                         </div>
@@ -210,7 +211,7 @@ With Check Point in your side-car, you can safely handle the sharpest turns and 
                         </div>
                         <div class="form-group form-group-submit">
                             <input type="hidden" name="form_check" value="1">
-                            <input class="btn" type="submit" value="Book a Consultation">
+                            <input class="btn btn-submit" type="submit" value="Book a Consultation">
                         </div>
                     </fieldset>
                 </form>
