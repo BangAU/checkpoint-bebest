@@ -39,7 +39,7 @@ include "header.php";
     </tfoot>
     <tbody>
 <?php
-$sql = "SELECT * FROM xirb_form_leads_contact ORDER BY form_fill_date DESC";
+$sql = "SELECT * FROM contact ORDER BY form_fill_date DESC";
 $result = mysqli_query($conn,$sql);
 
 if ($result->num_rows > 0) {
