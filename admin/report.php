@@ -39,18 +39,20 @@ include "header.php";
     </tfoot>
     <tbody>
 <?php
-$sql = "SELECT * FROM contact ORDER BY form_fill_date DESC";
+ $toaddsql="";
+                        
+ $sql = "SELECT * FROM contact ".$toaddsql. " ORDER BY id DESC";
 $result = mysqli_query($conn,$sql);
 
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         print "
         <tr>
-            <td class=\"report__first-cell\">" . $row["xirb_lead_id"]. "</td>
+            <td class=\"report__first-cell\">" . $row["id"]. "</td>
             <td>" . $row["firstname"]. "</td>
             <td>" . $row["lastname"]. "</td>
-            <td>" . $row["businessname"]. "</td>
             <td>" . $row["email"]. "</td>
+            <td>" . $row["businessname"]. "</td>
             <td>" . $row["phone"]. "</td>
 			<td>" . $row["insert_date"]. "</td></tr>"; 
     }

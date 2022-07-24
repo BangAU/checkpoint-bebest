@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     smooth_scroll();
     rellax();
     form_validate();
+    form_submit();
 });
 
 //function called on window resize
