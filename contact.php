@@ -22,7 +22,7 @@ if(isset($form_check) && $form_check == 1) {
         
         //sending email here
         // format the data to be sent
-        $all_data_html = '<strong>The following person has just submitted the form on:  https://www.checkpoint-smbsecurity.com/dickerdata</strong><br/><br/>'.
+        $all_data_html = '<strong>The following person has just submitted the form on:  https://racewithcheckpoint.com/</strong><br/><br/>'.
         '<table border=1>
         <tr><td>First Name</td><td>'.$firstname.'</td></tr>
         <tr><td>Last Name</td><td>'.$lastname.'</td></tr>

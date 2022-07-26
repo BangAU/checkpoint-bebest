@@ -88,7 +88,7 @@
                             <p>The right security solution will have your business firing on all cylinders. Learn more about the remarkable benefits of upgrading your cyber security with Check Point.</p>
                         </div>
                         <div class="btn-holder">
-                            <a href="" class="btn" download>Download</a>
+                            <a href="document/Checkpoint.Infographic.5-reasons-to-upgrade.pdf" class="btn" download>Download</a>
                         </div>
                     </div>
                 </div>
